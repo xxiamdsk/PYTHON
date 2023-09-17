@@ -68,7 +68,7 @@ while True:
 
         choice=input("\nWanna continue : ")        
         if choice in ('n','N'):
-           print("\nThanks for Using My Calculator")
+           print("\nThanks for Using my Calculator")
            
     break
    
