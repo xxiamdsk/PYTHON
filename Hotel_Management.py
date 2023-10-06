@@ -10,12 +10,12 @@
 import random
 import mysql.connector
 
-db = mysql.connector.connect(host='localhost', user='root', password='123456')
+db = mysql.connector.connect(host='localhost', user='root', password='')
 mycursor = db.cursor()
 mycursor.execute('create database if not exists HOTEL_MANAGEMENT')
 
 db = mysql.connector.connect(
-    host='localhost', user='root', password='123456', database='HOTEL_MANAGEMENT')
+    host='localhost', user='root', password='', database='HOTEL_MANAGEMENT')
 mycursor = db.cursor()
 
 mycursor.execute("create table if not exists hoteldata(Ccode int(5) primary key,Cname varchar(20),Cadd varchar(20),Cindate varchar(5),Coutdate varchar(5),Room_no varchar(5),Room_rent varchar(10),Food_bill varchar(10) default '00',Laudry_bill varchar(10) default '00' ,Game_bill varchar(10) default '00',SubTotal_bill varchar(10),Add_charges varchar(10) default '1800',GrandTotal_bill varchar(10))")
